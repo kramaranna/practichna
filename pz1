@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+#include <windows.h> 
+using namespace std;
+int main() {
+    system("color E1");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP (1251);
+// Прізвище
+    string last_name;
+    cout << "Введіть прізвище: ";
+    getline(cin, last_name);
+// Імʼя
+    string first_name;
+    cout << "Введіть імʼя: ";
+    getline(cin, first_name);
+//Вік
+    int age;
+    cout << "Введіть вік: ";
+    cin >> age;
+//Курс
+    int cource;
+    cout << "Введіть ваш курс: ";
+    cin >> cource;
+// Хоббі
+    string hobbi;
+    cout << "Введіть ваше хоббі: ";
+    getline(cin, hobbi);
+//Кількість домашніх улюбленців
+    int pet;
+    cout << "Введіть кількість домашніх улюбленців: ";
+    cin >> pet;
+// Очищення буфера після введення числа
+    cin.ignore();
+// Вивід введених даних 
+    cout << "\nВаші дані:" << endl;
+    cout << "Прізвище: " << last_name << endl; 
+    cout << "Ім'я: " << first_name << endl; 
+    cout << "Вік: " << age << endl; 
+    cout << "Курс: " << cource << endl; 
+    cout << "Хоббі: " << hobbi << endl; 
+    cout << "Кількість домашніх улюбленців: " << pet << endl; 
+    return 0;
+}
