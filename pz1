@@ -3,7 +3,7 @@
 #include <windows.h> 
 using namespace std;
 int main() {
-    system("color E1");
+    system("color A5");
     SetConsoleCP(1251);
     SetConsoleOutputCP (1251);
 // Прізвище
